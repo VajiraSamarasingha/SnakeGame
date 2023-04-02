@@ -25,7 +25,7 @@ import javax.swing.Timer;
  */
 public class GamePanel extends JPanel implements ActionListener{
     
-    
+    //Game Data
     static final int screenWidth =600;
     static final int screenHeight =600;
     static final int unitSize = 25;
@@ -42,7 +42,7 @@ public class GamePanel extends JPanel implements ActionListener{
     Timer timer;
     Random random;
     
-    
+    //Game Constructor
     GamePanel(){
         random = new Random();
         this.setPreferredSize(new Dimension(screenWidth,screenHeight));
@@ -52,6 +52,8 @@ public class GamePanel extends JPanel implements ActionListener{
         startGame();
     }
     
+    //Game Method
+
     public void startGame(){
         newApple();
         running = true;
